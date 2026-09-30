@@ -1,0 +1,179 @@
+Python is a high level programming language widely used in artificial intelligence, machine learning, data science, automation, and web development.
+
+A Python variable is a name that refers to a value. Variables can store integers, floating point numbers, strings, lists, dictionaries, tuples, sets, and other objects.
+
+A Python function is a reusable block of code that performs a specific operation. Functions can accept parameters and return values.
+
+A Python class defines the structure and behavior of objects. Object oriented programming uses concepts such as classes, objects, inheritance, encapsulation, abstraction, and polymorphism.
+
+A Python list is an ordered and mutable collection. A tuple is ordered but immutable. A dictionary stores key value pairs. A set stores unique values.
+
+A Python loop can repeatedly execute a block of code. The for loop iterates over an iterable, while the while loop continues until a condition becomes false.
+
+Exception handling in Python uses try, except, else, and finally blocks. Exceptions allow programs to handle unexpected situations without terminating immediately.
+
+NumPy provides efficient numerical arrays and mathematical operations for scientific computing.
+
+Pandas provides DataFrame and Series data structures for data manipulation and analysis. A DataFrame contains rows and columns.
+
+Pandas can read data from CSV, Excel, JSON, SQL databases, and other sources. Data cleaning can include handling missing values, removing duplicates, converting data types, and detecting outliers.
+
+Machine learning is a field of artificial intelligence in which algorithms learn patterns from data and use those patterns to make predictions or decisions.
+
+Supervised learning uses labeled data. Each training example contains input features and a target value.
+
+Classification is a supervised learning problem where the target represents a category. Examples include spam detection, fraud detection, disease classification, and sentiment classification.
+
+Regression is a supervised learning problem where the target is a continuous numerical value. Examples include house price prediction, sales forecasting, and student performance prediction.
+
+Unsupervised learning works with data without labeled target values. Clustering and dimensionality reduction are common unsupervised learning techniques.
+
+Linear regression models the relationship between input variables and a continuous target.
+
+Logistic regression is commonly used for binary and multiclass classification problems. It estimates probabilities using a logistic function.
+
+Decision trees recursively split data according to feature conditions. A tree contains decision nodes and leaf nodes.
+
+Random forest combines many decision trees. Each tree is trained using randomized samples and features, and the predictions are combined to produce the final result.
+
+Gradient boosting builds models sequentially. Each new model attempts to correct errors made by previous models.
+
+XGBoost is a gradient boosting algorithm that is widely used for structured and tabular data.
+
+Model training means adjusting model parameters so that predictions become closer to the expected targets.
+
+A loss function measures the difference between a model prediction and the target. Training attempts to minimize the loss.
+
+Gradient descent updates model parameters in the direction that reduces the loss.
+
+A learning rate controls the size of parameter updates during optimization. A learning rate that is too large can make training unstable, while a rate that is too small can make training slow.
+
+Overfitting occurs when a model performs very well on training data but poorly on unseen data.
+
+Underfitting occurs when a model is too simple to capture important patterns in the data.
+
+A validation dataset is used to evaluate a model during development. A test dataset is reserved for final evaluation.
+
+Cross validation divides the available training data into multiple folds and trains and evaluates the model across different splits.
+
+Accuracy measures the proportion of correct predictions among all predictions.
+
+Precision measures how many predicted positive examples are actually positive.
+
+Recall measures how many actual positive examples are correctly identified.
+
+The F1 score is the harmonic mean of precision and recall. It is useful when both precision and recall are important.
+
+A confusion matrix summarizes classification predictions using true positives, true negatives, false positives, and false negatives.
+
+Feature engineering creates or transforms input variables to make useful information easier for a machine learning algorithm to learn.
+
+Feature scaling transforms numerical features to comparable ranges. Standardization commonly produces features with approximately zero mean and unit variance.
+
+Deep learning uses neural networks containing multiple layers. Deep neural networks can learn complex representations from data.
+
+A neural network contains parameters such as weights and biases. During training, these parameters are updated using gradients.
+
+An activation function introduces nonlinearity into a neural network. ReLU, sigmoid, tanh, and GELU are common activation functions.
+
+Backpropagation computes gradients of the loss with respect to model parameters.
+
+PyTorch is a machine learning framework commonly used for deep learning research and production applications.
+
+A PyTorch tensor is a multidimensional numerical data structure that can run on CPUs and GPUs.
+
+A PyTorch model usually inherits from torch.nn.Module. Trainable parameters are stored inside the model.
+
+An optimizer updates model parameters based on gradients. Adam and AdamW are commonly used optimizers.
+
+A batch is a group of training examples processed together. Batch size determines how many examples are processed in one optimization step.
+
+An epoch represents one complete pass through a training dataset.
+
+Natural language processing is a field of artificial intelligence concerned with understanding and generating human language.
+
+Tokenization converts text into smaller units called tokens. Tokens can represent words, subwords, characters, or other text units.
+
+A tokenizer converts text into token IDs that a neural network can process.
+
+Subword tokenization allows a language model to represent words using smaller pieces. Byte pair encoding is one method of learning subword vocabulary.
+
+An embedding represents a discrete token as a dense numerical vector.
+
+A language model predicts tokens based on previously observed tokens.
+
+An autoregressive language model generates text by predicting one token at a time.
+
+A transformer is a neural network architecture based on attention mechanisms.
+
+Self attention allows each token to calculate relationships with other tokens in a sequence.
+
+Query, key, and value representations are used to calculate attention.
+
+Scaled dot product attention computes attention using the query and key representations and then applies the result to value representations.
+
+Multi head attention uses multiple attention mechanisms operating in parallel. Each head can learn different relationships between tokens.
+
+A causal attention mask prevents a language model from using future tokens when predicting the next token.
+
+A transformer block commonly contains attention, a feed forward network, layer normalization, and residual connections.
+
+Positional embeddings provide information about the position of tokens in a sequence.
+
+A decoder only transformer can be used for autoregressive text generation.
+
+A large language model contains a large number of trainable parameters and is trained on large text datasets.
+
+Generative AI models can generate text, code, images, audio, and other forms of content.
+
+Prompt engineering is the practice of designing instructions that guide a generative model toward a desired output.
+
+Instruction tuning trains a language model on examples containing instructions and desired responses.
+
+Fine tuning adapts a pretrained model to a specific task or domain.
+
+Parameter efficient fine tuning methods reduce the number of parameters that need to be updated during adaptation.
+
+LoRA introduces trainable low rank matrices while keeping most pretrained model parameters frozen.
+
+Retrieval augmented generation combines information retrieval with language generation. Relevant documents are retrieved and provided to the language model as context.
+
+Embeddings can be used to represent documents and queries in a vector space.
+
+A vector database stores vector representations and supports similarity search.
+
+Cosine similarity measures the similarity between vectors based on their angle.
+
+FAISS is a library for efficient similarity search over dense vectors.
+
+RAG systems commonly contain document loading, text splitting, embedding generation, vector storage, retrieval, prompt construction, and language generation.
+
+A hallucination occurs when a generative model produces information that is unsupported or incorrect.
+
+Evaluation is important for determining whether a language model produces useful and reliable results.
+
+A dataset should be cleaned and evaluated before being used for model training.
+
+Data leakage occurs when information from validation or test data improperly influences model training.
+
+A machine learning pipeline can contain data collection, preprocessing, feature engineering, training, validation, evaluation, and deployment.
+
+A model can be deployed behind an API so that applications can send inputs and receive predictions.
+
+FastAPI is a Python framework commonly used for building APIs.
+
+Docker packages an application and its dependencies into a container.
+
+GPU acceleration can significantly improve neural network training because GPUs can perform many numerical operations in parallel.
+
+CUDA is a platform used to execute compatible computations on NVIDIA GPUs.
+
+Model checkpoints store the parameters and configuration of a trained model so that training or inference can be resumed later.
+
+A language model's parameters are learned during training. Hyperparameters such as learning rate, batch size, context length, and number of layers are chosen by the developer.
+
+Training a transformer requires substantial computational resources as model size and dataset size increase.
+
+A small transformer can be useful for learning the fundamentals of language model training even though it cannot match the capabilities of large commercial models.
+
+Building a language model from scratch requires a tokenizer, dataset, model architecture, optimization procedure, evaluation method, and inference pipeline.

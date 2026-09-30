@@ -1,0 +1,49 @@
+A learning rate scheduler changes the learning rate during training. Common strategies include cosine decay, linear decay, step decay, and plateau based schedules. Scheduling can help the optimizer make larger updates early and smaller updates later.
+
+A chatbot can maintain conversation history to provide context across multiple turns. Long conversations may exceed the model context window, so systems may summarize older messages or selectively retrieve relevant history.
+
+Decision trees make predictions by repeatedly splitting data according to feature conditions. A tree can represent nonlinear relationships and is easy to interpret. However, a deep decision tree can memorize the training data. Random forests reduce this problem by training many decision trees on different samples and combining their predictions. Random forests can be useful when the relationship between features and the target is nonlinear.
+
+The same core concepts appear in larger language models: tokenization, embeddings, attention, positional information, Transformer blocks, next token prediction, optimization, and autoregressive generation.
+
+Architecture changes should be accompanied by evaluation. A larger model can memorize a small dataset even more easily, so model capacity should be matched to the amount of training data.
+
+A useful machine learning project is not defined only by its final metric. The engineering process is also important. Dataset preparation, tokenizer design, model implementation, training stability, validation, checkpointing, generation, error analysis, and experiment comparison demonstrate practical understanding of machine learning systems.
+
+Machine learning projects frequently begin with exploratory data analysis. Exploratory analysis examines the shape, columns, distributions, missing values, duplicate records, and relationships in a dataset. Visualization can reveal patterns that are difficult to notice from raw tables.
+
+Unseen prompts can test whether the model has learned reusable patterns. For example, a model trained on explanations of machine learning may be asked to explain the difference between classification and regression using wording not present in the training corpus.
+
+PyTorch is a deep learning framework that provides tensors, automatic differentiation, neural network modules, optimizers, and data loading utilities. A PyTorch model normally subclasses torch.nn.Module. Parameters are automatically tracked when layers are assigned as module attributes. The forward method defines how input tensors move through the model.
+
+Temperature changes the sharpness of the probability distribution during generation. Lower temperature makes the distribution more concentrated and tends to produce more predictable outputs. Higher temperature increases randomness and can produce more diverse but less reliable outputs.
+
+List comprehensions provide a compact syntax for constructing lists. A comprehension can iterate over a collection and optionally apply a condition. Although comprehensions are concise, readable code should be preferred over unnecessarily complicated expressions.
+
+Data augmentation can sometimes increase training diversity. For language data, augmentation should preserve the intended meaning and should not introduce incorrect technical information.
+
+Grid search evaluates combinations of specified hyperparameters. Random search samples hyperparameter combinations from distributions. Hyperparameter optimization can improve model performance, but it should be performed using appropriate validation procedures.
+
+Cloud GPUs can provide additional compute for training, but cost and resource management should be considered. Efficient data pipelines and smaller experiments can reduce unnecessary compute.
+
+A decoder-only transformer predicts the next token from previous tokens. During training, a sequence is shifted so that the input contains previous tokens and the target contains the expected next tokens. This creates many next-token prediction tasks from each training sequence.
+
+Byte pair encoding is a popular subword tokenization method. BPE begins with small symbols and repeatedly merges frequently occurring adjacent symbols. Frequent character sequences eventually become reusable tokens. A BPE tokenizer can represent uncommon words using combinations of smaller tokens.
+
+RoshanLM can maintain an experiment log containing experiment number, dataset size, vocabulary size, context length, embedding dimension, number of layers, learning rate, training loss, validation loss, perplexity, and qualitative observations.
+
+Feature engineering for time data can include year, month, day, hour, weekday, elapsed time, rolling averages, and lag features. These features can help models capture temporal patterns.
+
+Planning is the process of decomposing a complex task into smaller actions. A planner can identify required steps, dependencies, and expected outputs. Execution then performs the actions and observes their results.
+
+A software engineering AI agent can analyze a repository, understand project structure, inspect code, identify errors, propose changes, and run tests. Such an agent requires access to files and development tools in addition to language generation.
+
+Subword tokenization is useful because natural language contains a large number of possible words. A tokenizer with only whole-word tokens requires a very large vocabulary. Character tokenization avoids unknown words but produces long sequences. Subword tokenization provides a compromise between vocabulary size and sequence length.
+
+The relationship between tokens, vocabulary size, context length, and model capacity is important. A larger vocabulary can reduce sequence length but increases the number of output classes. A smaller vocabulary produces longer sequences but gives the model fewer output classes. The best choice depends on the corpus and the available training data.
+
+A data warehouse stores structured data for analytical queries. A data lake can store large amounts of structured, semi structured, and unstructured data. Modern data platforms may combine lake and warehouse capabilities.
+
+Attention weights represent how strongly one position uses information from another position. The weights are produced by comparing queries and keys and applying softmax. The resulting weighted combination of values becomes the attention output.
+
+Vector databases store numerical representations called embeddings. Similarity search can identify vectors that are close to a query vector. FAISS is a library for efficient similarity search. Other vector database systems provide indexing, metadata filtering, persistence, and distributed storage.
